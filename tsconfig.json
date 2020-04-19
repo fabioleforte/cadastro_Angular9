@@ -11,13 +11,14 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "only-arrow-functions": true,
+  "prefer-const": [true, { "destructuring": "all" }],
+  "arrow-return-shorthand": [true, "multiline"],
+  "rules": { "arrow-return-shorthand": true }
 }
